@@ -7,6 +7,7 @@ import {
   FlaskConical,
   Settings,
   Boxes,
+  FileCode2,
 } from "lucide-react";
 import { useRegistry } from "@/store/registry";
 import type { PanelId } from "@/types";
@@ -22,6 +23,7 @@ const NAV: Array<{
   { id: "interaction", label: "Interaction", icon: MousePointerClick, desc: "Read / Write" },
   { id: "dependency", label: "Dependency Map", icon: Share2, desc: "Node graph" },
   { id: "simulation", label: "Simulation", icon: FlaskConical, desc: "Tx preview" },
+  { id: "payload", label: "Payload Builder", icon: FileCode2, desc: "dist.js export" },
   { id: "settings", label: "Settings", icon: Settings, desc: "Config" },
 ];
 

@@ -8,6 +8,7 @@ import { RegistryPanel } from "@/components/registry/RegistryPanel";
 import { InteractionPanel } from "@/components/interaction/InteractionPanel";
 import { DependencyGraphPanel } from "@/components/dependency/DependencyGraphPanel";
 import { SimulationPanel } from "@/components/simulation/SimulationPanel";
+import { PayloadBuilderPanel } from "@/components/payload/PayloadBuilderPanel";
 import { SettingsPanel } from "@/components/layout/SettingsPanel";
 
 export default function Page() {
@@ -31,6 +32,8 @@ export default function Page() {
               <DependencyGraphPanel />
             ) : activePanel === "simulation" ? (
               <SimulationPanel />
+            ) : activePanel === "payload" ? (
+              <PayloadBuilderPanel />
             ) : (
               <SettingsPanel />
             )}

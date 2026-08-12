@@ -153,6 +153,7 @@ export type PanelId =
   | "interaction"
   | "dependency"
   | "simulation"
+  | "payload"
   | "settings";
 
 export interface SimulationConfig {

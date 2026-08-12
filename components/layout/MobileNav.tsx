@@ -1,6 +1,6 @@
 "use client";
 
-import { LayoutGrid, MousePointerClick, Share2, FlaskConical } from "lucide-react";
+import { LayoutGrid, MousePointerClick, Share2, FlaskConical, FileCode2 } from "lucide-react";
 import { useRegistry } from "@/store/registry";
 import type { PanelId } from "@/types";
 import { cn } from "@/lib/utils";
@@ -10,6 +10,7 @@ const ITEMS: Array<{ id: PanelId; label: string; icon: React.ComponentType<{ cla
   { id: "interaction", label: "Interact", icon: MousePointerClick },
   { id: "dependency", label: "Map", icon: Share2 },
   { id: "simulation", label: "Sim", icon: FlaskConical },
+  { id: "payload", label: "Payload", icon: FileCode2 },
 ];
 
 export function MobileNav() {
